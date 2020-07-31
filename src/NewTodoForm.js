@@ -39,12 +39,12 @@ class NewTodoForm extends Component{
                 <form className="todo-body">
                     <div className="form-group">
                     <label htmlFor="content-input">Content</label>
-                    <input type="text" className="form-control" id="content-input" onChange={this.handleContentInputChange}/>
+                    <input type="text" className="form-control" id="content-input" value={this.state.contentInput} onChange={this.handleContentInputChange}/>
                     </div>
 
                     <div className="form-group">
                     <label htmlFor="priority-input">Priority</label>
-                    <input type="text" className="form-control" id="priority-input" onChange={this.handlePriorityInputChange}/>
+                    <input type="text" className="form-control" id="priority-input" value={this.state.priorityInput} onChange={this.handlePriorityInputChange}/>
                     </div>
 
                     <button type="submit" className="btn btn-primary" onClick={this.handleClick}>Add</button>
